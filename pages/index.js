@@ -21,7 +21,7 @@ export default function Home() {
         }}
       >
         <Head>
-          <title>Lisa Yeung</title>
+          <title>Yip Yan Yeung</title>
           <meta name="description" content="Amateur designer but professional Innovator & Product Manager." />
           <link rel="icon" href="/images/miniheadshot.png" />
           <link rel="apple-touch-icon" href="/images/miniheadshot.png" />
@@ -35,6 +35,8 @@ export default function Home() {
             LISA <span className="font-bold">YEUNG</span>
           </h1>
           <p className="text-xl font-light tracking-wide text-gray-300 mb-8">
+            <span className="text-sm">aka. YIP YAN</span> <span className="text-sm font-bold">YEUNG</span> <br />
+            <br />
             Always an Innovator. <br />
             An amateur Designer & former Engineer.
           </p>
@@ -78,7 +80,7 @@ export default function Home() {
             </a>
             <span className="mx-4">·</span>
             <a 
-              href="/cv.pdf" 
+              href="/Yip Yan Yeung_CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm uppercase tracking-widest relative group"
@@ -115,38 +117,38 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        {/* Photo as small icon */}
+        <div className="absolute -right-4 -bottom-12 group">
+          <div className="relative">
+            <div className="w-[70px] h-[70px] md:w-[80px] md:h-[80px] overflow-hidden rounded-full">
+              <img
+                src="/images/headshot.png"
+                alt="Lisa Yeung"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div 
+              className="absolute -left-20 top-1/3 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{
+                background: 'linear-gradient(90deg, #4F46E5, #9333EA)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                fontFamily: 'Raleway, sans-serif',
+                fontSize: '1.5rem',
+                fontWeight: '800'
+              }}
+            >
+              NiHao!
+            </div>
+          </div>
+        </div>
       </div>
       <div className="absolute inset-0 z-0"
         style={{
           background: 'radial-gradient(circle at 30% 20%, rgba(79, 70, 229, 0.15) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(147, 51, 234, 0.15) 0%, transparent 50%)'
         }}
       ></div>
-
-      {/* Photo as small icon */}
-      <div className="fixed right-8 bottom-8 group">
-        <div className="relative">
-          <div className="w-[80px] h-[80px] overflow-hidden">
-            <img
-              src="/images/headshot.png"
-              alt="Lisa Yeung"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div 
-            className="absolute -left-20 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            style={{
-              background: 'linear-gradient(90deg, #4F46E5, #9333EA)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              fontFamily: 'Raleway, sans-serif',
-              fontSize: '1.5rem',
-              fontWeight: '800'
-            }}
-          >
-            NiHao!
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

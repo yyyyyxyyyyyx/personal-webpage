@@ -47,6 +47,7 @@ const ideas = [
 export default function IdeaPool() {
   const [activeSection, setActiveSection] = useState(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [showFooter, setShowFooter] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -76,6 +77,22 @@ export default function IdeaPool() {
     };
 
     window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth <= 640) { // sm breakpoint in Tailwind
+        const isAtBottom = window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 100;
+        setShowFooter(isAtBottom);
+      } else {
+        setShowFooter(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -132,7 +149,7 @@ export default function IdeaPool() {
       </header>
 
       <Head>
-        <title>Idea Pool - Lisa Yeung</title>
+        <title>Idea Pool - Yip Yan Yeung</title>
         
         <meta name="description" content="Ideas and future projects" />
         <link rel="icon" href="/miniheadshot.png" />
@@ -238,14 +255,14 @@ export default function IdeaPool() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
               </svg>
-              <span className="text-gray-400 group-hover:text-gray-200 transition-colors">Back to top</span>
+              <span className="text-gray-400 group-hover:text-gray-200 text-sm transition-colors">Back to Top</span>
             </button>
           </div>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 z-30">
+      <footer className={`fixed bottom-0 left-0 right-0 z-30 transition-opacity duration-300 ${showFooter ? 'opacity-100' : 'opacity-0 sm:opacity-100'}`}>
         <div className="absolute inset-0 h-full bg-gradient-to-t from-black from-70% via-black to-black/60" />
         <div className="relative p-4 sm:p-8">
           <div className="container max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">

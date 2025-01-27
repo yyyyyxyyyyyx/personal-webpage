@@ -121,6 +121,7 @@ export default function PastWork() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeSection, setActiveSection] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [showFooter, setShowFooter] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -142,6 +143,22 @@ export default function PastWork() {
     });
 
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth <= 640) { // sm breakpoint in Tailwind
+        const isAtBottom = window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 100;
+        setShowFooter(isAtBottom);
+      } else {
+        setShowFooter(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleImageClick = (imageSrc, e) => {
@@ -218,7 +235,7 @@ export default function PastWork() {
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
-                href="/cv.pdf" 
+                href="/Yip Yan Yeung_CV.pdf" 
                 className="text-sm uppercase tracking-wider text-gray-400 hover:text-white transition-colors duration-300 group relative"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -403,7 +420,7 @@ export default function PastWork() {
       </div>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 z-30">
+      <footer className={`fixed bottom-0 left-0 right-0 z-30 transition-opacity duration-300 ${showFooter ? 'opacity-100' : 'opacity-0 sm:opacity-100'}`}>
         <div className="absolute inset-0 h-full bg-gradient-to-t from-black from-70% via-black to-black/60" />
         <div className="relative p-4 sm:p-8">
           <div className="container max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
