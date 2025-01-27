@@ -63,7 +63,7 @@ const projects = [
         title: "Adaptive User Experience (2024)",
         description: `New type of user experience for user to directly interact with UI component chosen by LLM based on user's intent.  <br /><br />
         Now a company project so I'll keep quiet here. <br /><br />`,
-        image: "/images/aux.png",
+        image: "/images/adapt.png",
         tags: ["User Experience", "AI", "Product Design"]
       },
       {
