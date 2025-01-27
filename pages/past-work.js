@@ -28,7 +28,7 @@ const projects = [
         description: `Posting English Learning content and videos on RedNote @Sr. <br /><br />
         Subscriber: 1.3k. Highest record for a single post: 70k views+ 1k likes. <br /><br />
         <strong style="font-weight: 700;">Follow me on <a href='https://www.xiaohongshu.com/user/profile/65c8a2f3000000000b036b41?xsec_token=YBwiETkzbhN3F6NHJukfpzDBUh-ysArhLs8qIlfZOE13k=&xsec_source=app_share&xhsshare=CopyLink&appuid=65c8a2f3000000000b036b41&apptime=1737894427&share_id=c9152acbc33a4ff1bbad4b842af73b13' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">RedNote 小红书 @Sr</a>.</strong>`,
-        image: "/images/Sr.png",
+        image: "/images/sr.png",
         tags: ["Language Learning", "Social Media", "Teaching"]
       },
       {
