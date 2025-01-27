@@ -423,27 +423,17 @@ export default function PastWork() {
             <div className="flex items-center space-x-4 sm:space-x-6">
               <a 
                 href="mailto:yyx_yyx@live.cn"
-                className="text-white/50 hover:text-transparent transition-colors duration-300 social-icon"
-                style={{
-                  background: 'linear-gradient(90deg, #4F46E5, #9333EA)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}
+                className="opacity-70 hover:opacity-100 transition-opacity duration-300"
               >
-                <i className="fas fa-envelope text-xl"></i>
+                <i className="fas fa-envelope text-xl text-white"></i>
               </a>
               <a 
                 href="https://www.linkedin.com/in/yipyanyeung/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/50 hover:text-transparent transition-colors duration-300 social-icon"
-                style={{
-                  background: 'linear-gradient(90deg, #4F46E5, #9333EA)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}
+                className="opacity-70 hover:opacity-100 transition-opacity duration-300"
               >
-                <i className="fab fa-linkedin text-xl"></i>
+                <i className="fab fa-linkedin text-xl text-white"></i>
               </a>
             </div>
           </div>
