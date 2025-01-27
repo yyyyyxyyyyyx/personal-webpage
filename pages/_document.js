@@ -21,6 +21,18 @@ export default function Document() {
             `
           }}
         />
+        {/* Google Analytics tracking code */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGD0HK4XSC" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HGD0HK4XSC');
+            `
+          }}
+        />
       </Head>
       <body>
         <Main />
