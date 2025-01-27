@@ -23,7 +23,8 @@ export default function Home() {
         <Head>
           <title>Lisa Yeung</title>
           <meta name="description" content="Amateur designer but professional Innovator & Product Manager." />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/images/miniheadshot.png" />
+          <link rel="apple-touch-icon" href="/images/miniheadshot.png" />
           <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
         </Head>

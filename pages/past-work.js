@@ -218,8 +218,10 @@ export default function PastWork() {
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
-                href="/cv" 
+                href="/cv.pdf" 
                 className="text-sm uppercase tracking-wider text-gray-400 hover:text-white transition-colors duration-300 group relative"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 CV
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-300"></span>
@@ -234,9 +236,10 @@ export default function PastWork() {
         {/* Left content - Scrollable main content */}
         <div className="flex-1 max-w-3xl mx-auto pb-24 relative z-10 overflow-y-auto h-[calc(100vh-6rem)]">
           <Head>
-            <title>Past Work - Lisa Yeung</title>
+            <title>What's up - Lisa Yeung</title>
             <meta name="description" content="Past work and projects" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/images/miniheadshot.png" />
+            <link rel="apple-touch-icon" href="/images/miniheadshot.png" />
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
           </Head>
@@ -384,7 +387,7 @@ export default function PastWork() {
                           <div 
                             className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                               isActive
-                                ? 'bg-[#9333EA] ring-1 ring-purple-500/20'
+                                ? 'bg-[#9333EA] ring-1 ring-purple-400/20'
                                 : 'bg-gray-600 hover:bg-gray-400'
                             }`} 
                           />
@@ -404,7 +407,7 @@ export default function PastWork() {
         <div className="absolute inset-0 h-full bg-gradient-to-t from-black from-70% via-black to-black/60" />
         <div className="relative p-4 sm:p-8">
           <div className="container max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <div className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] overflow-hidden">
                 <img
                   src="/images/miniheadshot.png"
