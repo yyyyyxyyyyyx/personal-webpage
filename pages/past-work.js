@@ -235,7 +235,7 @@ export default function PastWork() {
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
-                href="/Yip Yan Yeung_CV.pdf" 
+                href="/Yip_Yan_Yeung_CV.pdf" 
                 className="text-sm uppercase tracking-wider text-gray-400 hover:text-white transition-colors duration-300 group relative"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -253,7 +253,7 @@ export default function PastWork() {
         {/* Left content - Scrollable main content */}
         <div className="flex-1 max-w-3xl mx-auto pb-24 relative z-10 overflow-y-auto h-[calc(100vh-6rem)]">
           <Head>
-            <title>What's up - Lisa Yeung</title>
+            <title>What's up - Yip Yan Yeung</title>
             <meta name="description" content="Past work and projects" />
             <link rel="icon" href="/images/miniheadshot.png" />
             <link rel="apple-touch-icon" href="/images/miniheadshot.png" />

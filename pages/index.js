@@ -80,7 +80,7 @@ export default function Home() {
             </a>
             <span className="mx-4">·</span>
             <a 
-              href="/Yip Yan Yeung_CV.pdf" 
+              href="/Yip_Yan_Yeung_CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm uppercase tracking-widest relative group"
