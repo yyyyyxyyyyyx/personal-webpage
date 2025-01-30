@@ -9,32 +9,35 @@ const projects = [
     items: [
       {
         title: "Runaway",
-        description: `English learning platform with TOEFL real exam question practice 
+        description: `English learning platform with TOEFL all-subject real exam question practice 
         and AI-generated learning materials.<br /><br />
-        <strong style="font-weight: 700;">Visit us on <a href="https://runaway.online/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://runaway.online/</a></strong>.<br /><br />
+        Visit us on <strong style="font-weight: 700;"><a href="https://runaway.online/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://runaway.online/</a></strong> (undergoing upgrade now).<br /><br />
                 Thank you my dear mentor for the development efforts.
 `,
         image: "/images/runaway.png",
         tags: ["Product Design", "Language Learning", "AI"]
       },
       {
-        title: "Exam Question Parser with LLM",
-        description: "Adapt OpenAI's API to parse and organize TOEFL exam questions, making the process far more efficient.",
+        title: "Exam Question Parser with LLM + OCR",
+        description: `Adapting OpenAI's API and Tesseract OCR to parse and organize TOEFL exam questions, making the process to map questions to Runaway question repo far more efficient. <br /><br />
+        Made with Windsurf in attempt to compare with Cursor (used in previous project).`,
         image: "/images/parser.png",
         tags: ["Indie Hacker w/Windsurf", "Productivity", "AI"]
       },
       {
         title: "English Learning Blogger",
-        description: `Posting English Learning content and videos on RedNote @Sr. <br /><br />
+        description: `Posting English Learning content and videos on RedNote @Sr since Mar, 2024. <br /><br />
         Subscriber: 1.3k. Highest record for a single post: 70k views+ 1k likes. <br /><br />
-        <strong style="font-weight: 700;">Follow me on <a href='https://www.xiaohongshu.com/user/profile/65c8a2f3000000000b036b41?xsec_token=YBwiETkzbhN3F6NHJukfpzDBUh-ysArhLs8qIlfZOE13k=&xsec_source=app_share&xhsshare=CopyLink&appuid=65c8a2f3000000000b036b41&apptime=1737894427&share_id=c9152acbc33a4ff1bbad4b842af73b13' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">RedNote 小红书 @Sr</a>.</strong>`,
+        Follow me on <strong style="font-weight: 700;"><a href='https://www.xiaohongshu.com/user/profile/65c8a2f3000000000b036b41?xsec_token=YBwiETkzbhN3F6NHJukfpzDBUh-ysArhLs8qIlfZOE13k=&xsec_source=app_share&xhsshare=CopyLink&appuid=65c8a2f3000000000b036b41&apptime=1737894427&share_id=c9152acbc33a4ff1bbad4b842af73b13' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">RedNote 小红书 @Sr</a>.</strong>`,
         image: "/images/sr.png",
         tags: ["Language Learning", "Social Media", "Teaching"]
       },
       {
         title: "TED Language Supervisor & Translator",
         description: `English to Simplified Chinese translation and review for over 500 TED Talks videos.<br /><br />
-        <strong style="font-weight: 700;">Visit me on <a href="https://www.ted.com/profiles/33353256/translator" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://www.ted.com/profiles/33353256/translator</a>.</strong><br /><br />`,
+        One of the top Translators on TED, and winner of TEDWomen 2023 Subtitling Contest.<br /><br />
+        Watch my past work on <strong style="font-weight: 700;"><a href="https://www.ted.com/profiles/33353256/translator" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://www.ted.com/profiles/33353256/translator</a>.</strong><br /><br />
+        Interview Script in Chinese (Jun, 2022): <strong style="font-weight: 700;"><a href="https://mp.weixin.qq.com/s/rFMjdOyVKCzADU12w2kE_g" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://mp.weixin.qq.com/s/rFMjdOyVKCzADU12w2kE_g</a>.</strong><br /><br />`,
         image: "/images/TED.png",
         tags: ["Volunteering", "Translation", "Culture"]
       }
@@ -46,16 +49,17 @@ const projects = [
       {
         title: "Tryout (2024)",
         description: `Experimental project of a fully-functional platform for recruiting new product beta testers. <br /><br />
-        Also an experient for Building in Public on X! <br /><br />
-        <strong style='font-weight: 700;'>Visit Tryout on <a href='http://tryout-six.vercel.app' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">http://tryout-six.vercel.app</a>.</strong>`,
+        Also an experient for Building in Public on X. <br /><br />
+        Made with Cursor to try out AI-assisted code generation. <br /><br />
+        Visit Tryout on <strong style='font-weight: 700;'><a href='http://tryout-six.vercel.app' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">http://tryout-six.vercel.app</a>.</strong>`,
         image: "/images/tryout.png",
         tags: ["Indie Hacker w/Cursor", "Product Launch", "Experiment"]
       },
       {
         title: "TV Blogger & Site Owner (2024)",
-        description: `Blogger + Site Owner of popular TV reality shows.  <br /><br />
+        description: `Blogger + Site Owner of popular TV reality shows, with an initial motivation to share latest shows abroad. <br /><br />
         Subscriber: 0.5k. Highest record: 87k views. <br /><br />
-        <strong style='font-weight: 700;'>Visit <a href='http://run-away.online' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">http://run-away.online</a></strong> (sadly no longer maintained).`,
+        Visit <strong style='font-weight: 700;'><a href='http://run-away.online' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">http://run-away.online</a></strong> (sadly no longer maintained).`,
         image: "/images/bb.png",
         tags: ["Indie Hacker w/Claude & Supabase", "TV & Reality Shows", "Social Media", "Experiment"]
       },
@@ -80,27 +84,27 @@ const projects = [
     items: [
       {
         title: "Book - Spooky Technology (2021)",
-        description: `Spooky Technology:A reflection on the invisible and otherworldly qualities in everyday technologies.<br /><br />
-        <strong style="font-weight: 700;">Visit <a href="https://spookyte.ch/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://spookyte.ch/</a></strong><br /><br />
-        ISBN: 9780956542151.`,
+        description: `Spooky Technology: A reflection on the invisible and otherworldly qualities in everyday technologies. (ISBN: 9780956542151) <br /><br />
+        Visit<strong style="font-weight: 700;"> <a href="https://spookyte.ch/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-300">https://spookyte.ch/</a></strong> to preview and download the book for free.<br /><br />
+        Co-authored with my Carnegie Mellon University Professors & Fellows.`,
         image: "/images/spooky.png",
         tags: ["Tech", "Book"]
       },
       {
         title: "START - Truck Trip Planner (2021)",
-        description: `Project at Volvo Group Connected Solutions Innovation Lab with Mack Truck.`,
+        description: `Innovation project (product design) at Volvo Group Connected Solutions Innovation Lab (HUB355) with Mack Truck.`,
         image: "/images/volvo.png",
         tags: ["Product Design", "Innovation", "Transportation"]
       },
       {
-        title: "Bluetooth Mesh (2019)",
-        description: `Research at the University of Hong Kong.`,
+        title: "Bluetooth Mesh for the IoT (2019)",
+        description: `Research at the University of Hong Kong, managing flooding issue in Bluetooth Mesh.`,
         image: "/images/hku.png",
         tags: ["Telecommunications", "Bluetooth", "Engineering"]
       },
       {
         title: "Intelligent Garage (2018)",
-        description: `Submission to Schneider Electric Go Green in the City Innovation Contest 2018 and winner the second prize.`,
+        description: `Submission to Schneider Electric Go Green in the City Innovation Contest 2018 and winner of the second prize.`,
         image: "/images/gogreen.png",
         tags: ["Innovation", "Engineering"]
       },
