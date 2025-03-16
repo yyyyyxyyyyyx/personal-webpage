@@ -1,5 +1,6 @@
 /* 确保字体正确加载 */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/* 使用本地字体定义，不再从Google Fonts加载 */
+/* 移除远程字体导入 */
 
 /* 备用字体定义 */
 @font-face {
@@ -29,4 +30,5 @@ body {
 .social-icon:hover {
   background: linear-gradient(90deg, #4F46E5, #9333EA);
   -webkit-background-clip: text;
+  background-clip: text;
 }
