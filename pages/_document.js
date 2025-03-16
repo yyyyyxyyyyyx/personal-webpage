@@ -4,15 +4,65 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        {/* 使用本地Raleway字体 */}
-        <link
-          rel="stylesheet"
-          href="/fonts/raleway.css"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-          rel="stylesheet"
-        />
+        {/* 直接内联字体样式，避免外部请求 */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          /* 内联Raleway字体定义 */
+          @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Raleway Light'), local('Raleway-Light'), url('/fonts/raleway/raleway-300.woff2') format('woff2');
+          }
+          @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Raleway'), local('Raleway-Regular'), url('/fonts/raleway/raleway-400.woff2') format('woff2');
+          }
+          @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: local('Raleway Medium'), local('Raleway-Medium'), url('/fonts/raleway/raleway-500.woff2') format('woff2');
+          }
+          @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url('/fonts/raleway/raleway-600.woff2') format('woff2');
+          }
+          @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Raleway Bold'), local('Raleway-Bold'), url('/fonts/raleway/raleway-700.woff2') format('woff2');
+          }
+        `}} />
+        
+        {/* 自定义图标字体，避免使用CDN */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          /* 简化的图标字体样式，只包含必要的图标 */
+          .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 sans-serif;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+          
+          /* 使用Unicode字符作为图标替代 */
+          .fa-github:before { content: "\\2605"; } /* 星形 */
+          .fa-linkedin:before { content: "\\2661"; } /* 心形 */
+          .fa-twitter:before { content: "\\2709"; } /* 信封 */
+          .fa-instagram:before { content: "\\2315"; } /* 相机 */
+        `}} />
+        
         {/* Microsoft Clarity tracking code */}
         <script
           type="text/javascript"
