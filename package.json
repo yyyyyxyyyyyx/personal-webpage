@@ -8,7 +8,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
+    "pages:watch": "npx @cloudflare/next-on-pages --watch",
+    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.17",
@@ -17,5 +21,9 @@
     "react": "latest",
     "react-dom": "latest",
     "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
+    "wrangler": "^3.114.1"
   }
 }
