@@ -48,3 +48,7 @@ next-env.d.ts
 **/dist/
 **/.turbo/
 **/.swc/
+
+# 添加Next.js构建输出
+.next/
+out/
