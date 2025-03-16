@@ -1,20 +1,22 @@
-export default function Footer({ className = "", containerClassName = "" }) {
+export default function Footer({ className = "", containerClassName = "", showProfile = true }) {
   return (
     <div className={`flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 ${containerClassName}`}>
-      <div className="flex items-center gap-4">
-        <div className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] overflow-hidden">
-          <img
-            src="/images/miniheadshot.png"
-            alt="Lisa Yeung"
-            className="w-full h-full object-cover"
-          />
+      {showProfile && (
+        <div className="flex items-center gap-4">
+          <div className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] overflow-hidden">
+            <img
+              src="/images/miniheadshot.png"
+              alt="Lisa Yeung"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="text-gray-400 font-light text-sm sm:text-base">
+            LISA <span className="font-bold">YEUNG</span>
+          </div>
         </div>
-        <div className="text-gray-400 font-light text-sm sm:text-base">
-          LISA <span className="font-bold">YEUNG</span>
-        </div>
-      </div>
+      )}
 
-      <div className={`flex space-x-6 ${className}`}>
+      <div className={`flex space-x-6 ${className} ${!showProfile ? 'mx-auto' : ''}`}>
         <a 
           href="mailto:yyx_yyx@live.cn"
           className="opacity-70 hover:opacity-100 transition-all duration-300"

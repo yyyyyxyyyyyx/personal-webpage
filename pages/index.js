@@ -100,7 +100,7 @@ export default function Home() {
               ></span>
             </a>
           </div>
-          <Footer className="mt-8" />
+          <Footer className="mt-8" showProfile={false} />
         </div>
 
         {/* Photo as small icon */}
