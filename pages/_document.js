@@ -44,24 +44,14 @@ export default function Document() {
           }
         `}} />
         
-        {/* 自定义图标字体，避免使用CDN */}
-        <style dangerouslySetInnerHTML={{ __html: `
-          /* 简化的图标字体样式，只包含必要的图标 */
-          .fa {
-            display: inline-block;
-            font: normal normal normal 14px/1 sans-serif;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-          }
-          
-          /* 使用Unicode字符作为图标替代 */
-          .fa-github:before { content: "\\2605"; } /* 星形 */
-          .fa-linkedin:before { content: "\\2661"; } /* 心形 */
-          .fa-twitter:before { content: "\\2709"; } /* 信封 */
-          .fa-instagram:before { content: "\\2315"; } /* 相机 */
-        `}} />
+        {/* 恢复Font Awesome图标支持 */}
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+          crossOrigin="anonymous" 
+          referrerPolicy="no-referrer" 
+        />
         
         {/* Microsoft Clarity tracking code */}
         <script
