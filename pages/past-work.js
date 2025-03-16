@@ -428,20 +428,7 @@ export default function PastWork() {
       <footer className={`fixed bottom-0 left-0 right-0 z-30 transition-opacity duration-300 ${showFooter ? 'opacity-100' : 'opacity-0 sm:opacity-100'}`}>
         <div className="absolute inset-0 h-full bg-gradient-to-t from-black from-70% via-black to-black/60" />
         <div className="relative p-4 sm:p-8">
-          <div className="container max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-            <div className="flex items-center gap-4">
-              <div className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] overflow-hidden">
-                <img
-                  src="/images/miniheadshot.png"
-                  alt="Lisa Yeung"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-gray-400 font-light text-sm sm:text-base">
-                LISA <span className="font-bold">YEUNG</span>
-              </div>
-            </div>
-
+          <div className="container max-w-6xl mx-auto">
             <Footer />
           </div>
         </div>

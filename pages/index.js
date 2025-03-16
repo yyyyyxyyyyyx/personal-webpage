@@ -100,7 +100,7 @@ export default function Home() {
               ></span>
             </a>
           </div>
-          <Footer />
+          <Footer className="mt-8" />
         </div>
 
         {/* Photo as small icon */}
