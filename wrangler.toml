@@ -4,12 +4,14 @@ output_directory = ".next"
 
 [build.environment]
 NODE_VERSION = "20.0.0"
+NEXT_TELEMETRY_DISABLED = "1"
 
 [site]
 bucket = ".next"
 
 [env.production]
 minify = true
+workers_dev = true
 
 # 配置缓存控制
 [env.production.cache]
@@ -36,3 +38,11 @@ pretty_urls = true
 
 [build.processing.images]
 compress = true
+
+[routes]
+pattern = "/*"
+script = "index.js"
+
+[[custom_domains]]
+zone_name = "yeung.in"
+custom_domain = "yeung.in"

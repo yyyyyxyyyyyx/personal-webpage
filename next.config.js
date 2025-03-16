@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
+    domains: ['yeung.in', 'personal-webpage-26n.pages.dev'],
   },
-  // 移除basePath配置，Cloudflare Pages不需要它
   
   // 添加webpack配置以优化构建输出
   webpack: (config, { dev, isServer }) => {
@@ -53,8 +53,14 @@ const nextConfig = {
   // 启用压缩
   compress: true,
   
-  // 禁用大型静态导出
+  // 使用standalone输出模式
   output: 'standalone',
+  
+  // 添加Cloudflare Pages特定配置
+  trailingSlash: false,
+  
+  // 确保静态资产正确加载
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://yeung.in' : '',
 }
 
 module.exports = nextConfig
