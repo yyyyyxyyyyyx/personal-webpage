@@ -1,5 +1,9 @@
 {
   "version": 1,
   "include": ["/*"],
-  "exclude": []
+  "exclude": [
+    "/build/*",
+    "/node_modules/*",
+    "/.git/*"
+  ]
 }

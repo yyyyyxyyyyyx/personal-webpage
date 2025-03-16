@@ -1,17 +1,24 @@
-/* /_next/static/* 200
-/* /_next/image/* 200
-/* /_next/data/* 200
-/* /api/* 200
-/* /static/* 200
-/* /assets/* 200
-/* /images/* 200
-/* /favicon.ico 200
-/* /manifest.json 200
-/* /robots.txt 200
-/* /sitemap.xml 200
-/* /_next/webpack-hmr 101
-/* /_error 404
-/* /404 404
-/* /500 500
+# 基本重定向规则 - 确保所有路径都能正确访问
 /* /index.html 200
+
+# 特定静态资源路径 - 确保它们能被正确访问
+/_next/static/* /_next/static/:splat 200
+/static/* /static/:splat 200
+/images/* /images/:splat 200
+/assets/* /assets/:splat 200
+
+# API路径
+/api/* /api/:splat 200
+
+# 特殊文件
+/favicon.ico /favicon.ico 200
+/manifest.json /manifest.json 200
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+
+# 保留原有的错误页面重定向规则
+/_next/webpack-hmr 101
+/_error 404
+/404 404
+/500 500
 /* /* 200
