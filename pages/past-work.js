@@ -263,7 +263,6 @@ export default function PastWork() {
             <link rel="icon" href="/images/miniheadshot.png" />
             <link rel="apple-touch-icon" href="/images/miniheadshot.png" />
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
           </Head>
 
           <h1 className="text-4xl font-light tracking-wider mb-12 text-white text-center">WHAT'S <span className="font-bold">UP</span></h1>
@@ -429,7 +428,7 @@ export default function PastWork() {
         <div className="absolute inset-0 h-full bg-gradient-to-t from-black from-70% via-black to-black/60" />
         <div className="relative p-4 sm:p-8">
           <div className="container max-w-6xl mx-auto">
-            <Footer />
+            <Footer containerClassName="!justify-between" />
           </div>
         </div>
       </footer>

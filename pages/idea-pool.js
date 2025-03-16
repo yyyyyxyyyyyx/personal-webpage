@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Footer from '../components/Footer';
 
 // 示例数据
 const ideas = [
@@ -155,7 +156,6 @@ export default function IdeaPool() {
         <link rel="icon" href="/miniheadshot.png" />
         <link rel="apple-touch-icon" href="/miniheadshot.png" />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
       </Head>
 
       {/* Main content with right navigation */}
@@ -265,36 +265,8 @@ export default function IdeaPool() {
       <footer className={`fixed bottom-0 left-0 right-0 z-30 transition-opacity duration-300 ${showFooter ? 'opacity-100' : 'opacity-0 sm:opacity-100'}`}>
         <div className="absolute inset-0 h-full bg-gradient-to-t from-black from-70% via-black to-black/60" />
         <div className="relative p-4 sm:p-8">
-          <div className="container max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-            <div className="flex items-center gap-4">
-              <div className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] overflow-hidden">
-                <img
-                  src="images/miniheadshot.png"
-                  alt="YYX"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-gray-400 font-light text-sm sm:text-base">
-                LISA <span className="font-bold">YEUNG</span>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4 sm:space-x-6">
-              <a 
-                href="mailto:yyx_yyx@live.cn"
-                className="opacity-70 hover:opacity-100 transition-all duration-300"
-              >
-                <i className="fas fa-envelope text-xl text-white"></i>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/yipyanyeung/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="opacity-70 hover:opacity-100 transition-all duration-300"
-              >
-                <i className="fab fa-linkedin text-xl text-white"></i>
-              </a>
-            </div>
+          <div className="container max-w-6xl mx-auto">
+            <Footer containerClassName="!justify-between" />
           </div>
         </div>
       </footer>
