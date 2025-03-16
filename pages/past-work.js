@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState, Fragment, useEffect } from 'react';
 import Link from 'next/link';
+import Footer from '../components/Footer';
 
 const projects = [
   {
@@ -441,22 +442,7 @@ export default function PastWork() {
               </div>
             </div>
 
-            <div className="flex items-center space-x-4 sm:space-x-6">
-              <a 
-                href="mailto:yyx_yyx@live.cn"
-                className="opacity-70 hover:opacity-100 transition-opacity duration-300"
-              >
-                <i className="fas fa-envelope text-xl text-white"></i>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/yipyanyeung/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="opacity-70 hover:opacity-100 transition-opacity duration-300"
-              >
-                <i className="fab fa-linkedin text-xl text-white"></i>
-              </a>
-            </div>
+            <Footer />
           </div>
         </div>
       </footer>
