@@ -9,9 +9,9 @@
 /* /manifest.json 200
 /* /robots.txt 200
 /* /sitemap.xml 200
-/* /index.html 200
 /* /_next/webpack-hmr 101
 /* /_error 404
 /* /404 404
 /* /500 500
+/* /index.html 200
 /* /* 200
