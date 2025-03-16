@@ -1,0 +1,38 @@
+[build]
+command = "npm run build"
+output_directory = ".next"
+
+[build.environment]
+NODE_VERSION = "20.0.0"
+
+[site]
+bucket = ".next"
+
+[env.production]
+minify = true
+
+# 配置缓存控制
+[env.production.cache]
+caching = true
+preview_cache_condition = true
+serve_stale = true
+browser_ttl = 86400 # 1天的缓存
+edge_ttl = 86400 # 1天的缓存
+
+# 配置构建输出
+[build.processing]
+skip_processing = false
+
+[build.processing.css]
+bundle = true
+minify = true
+
+[build.processing.js]
+bundle = true
+minify = true
+
+[build.processing.html]
+pretty_urls = true
+
+[build.processing.images]
+compress = true

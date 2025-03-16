@@ -31,3 +31,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cloudflare Pages
+.cloudflare/
+.wrangler/
+
+# Cache files
+.cache/
+**/.cache/
+**/cache/
+**/*.pack
+**/*.pack.old
+
+# Build artifacts
+**/.webpack/
+**/dist/
+**/.turbo/
+**/.swc/
