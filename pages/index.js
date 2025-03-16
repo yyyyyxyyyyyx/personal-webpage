@@ -105,7 +105,7 @@ export default function Home() {
               href="mailto:yyx_yyx@live.cn"
               className="opacity-70 hover:opacity-100 transition-all duration-300"
             >
-              <i className="fas fa-envelope text-xl text-white"></i>
+              <i className="fa-solid fa-envelope text-xl text-white"></i>
             </a>
             <a 
               href="https://www.linkedin.com/in/yipyanyeung/"
@@ -113,7 +113,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="opacity-70 hover:opacity-100 transition-all duration-300"
             >
-              <i className="fab fa-linkedin text-xl text-white"></i>
+              <i className="fa-brands fa-linkedin text-xl text-white"></i>
             </a>
           </div>
         </div>
