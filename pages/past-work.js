@@ -44,7 +44,7 @@ const projects = [
         title: "English Learning Blogger (2024 - 2025)",
         description: `Posting English Learning content and videos on RedNote @Sr since Mar, 2024 and sunset on May.20, 2025. <br /><br />
         Subscriber: 1.6k. Highest record for a single post: 70k views+ 1k likes. <br /><br />
-        Past account at <strong style="font-weight: 700;"><a href='https://www.xiaohongshu.com/user/profile/65c8a2f3000000000b036b41?xsec_token=YBwiETkzbhN3F6NHJukfpzDBUh-ysArhLs8qIlfZOE13k=&xsec_source=app_share&xhsshare=CopyLink&appuid=65c8a2f3000000000b036b41&apptime=1737894427&share_id=c9152acbc33a4ff1bbad4b842af73b13' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">RedNote 小红书 @Sr</a>.</strong>(no longer maintained)`,
+        Past account at <strong style="font-weight: 700;"><a href='https://www.xiaohongshu.com/user/profile/65c8a2f3000000000b036b41?xsec_token=YBwiETkzbhN3F6NHJukfpzDBUh-ysArhLs8qIlfZOE13k=&xsec_source=app_share&xhsshare=CopyLink&appuid=65c8a2f3000000000b036b41&apptime=1737894427&share_id=c9152acbc33a4ff1bbad4b842af73b13' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">RedNote 小红书 @Sr</a> (no longer maintained).</strong>`,
         image: "/images/sr.png",
         tags: ["Language Learning", "Social Media", "Teaching"]
       },
@@ -53,7 +53,7 @@ const projects = [
         description: `Experimental project of a fully-functional platform for recruiting new product beta testers. <br /><br />
         Also an experient for Building in Public on X. <br /><br />
         Made with Cursor to try out AI-assisted code generation. <br /><br />
-        Visit Tryout on <strong style='font-weight: 700;'><a href='http://tryout-six.vercel.app' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">http://tryout-six.vercel.app</a>.</strong> (no longer maintained)`,
+        Visit Tryout on <strong style='font-weight: 700;'><a href='http://tryout-six.vercel.app' target='_blank' rel='noopener noreferrer' class="hover:text-blue-400 transition-colors duration-300">http://tryout-six.vercel.app</a> (no longer maintained).</strong>`,
         image: "/images/tryout.png",
         tags: ["Indie Hacker w/Cursor", "Product Launch", "Experiment"]
       },
